@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+p{
+    font-size: 18px;
+}
+.sync{
+    width: 40%;
+    background: rgba(10, 10, 248, 0.733);
+    color: rgba(240, 248, 255, 0.733);
+    border-radius: 50px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    border: 0ch;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+.sync:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.603);
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10px;
+}

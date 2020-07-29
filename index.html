@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> 
+    <title>Fitbit</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Cadence</h2>
+            <p id="cadence">2 steps/min</p>
+        </div>
+        <div class="card">
+            <h2>Total Steps</h2>
+            <p id="steps">170</p>
+        </div>
+    </div>
+    <canvas id="myChart" width="150" height="150"></canvas>
+    <button class="sync" onclick="fetchdata()">Sync Device</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
