@@ -5,9 +5,6 @@
 body{
     text-align: center;
 }
-p{
-    font-size: 18px;
-}
 .sync{
     width: 40%;
     background: rgba(10, 10, 248, 0.733);
@@ -35,4 +32,7 @@ p{
     transition: 0.3s;
     width: 40%;
     border-radius: 10px;
+}
+.card p{
+    font-size: 18px;
 }

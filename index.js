@@ -8,6 +8,19 @@ generateLabels = (count) => {
   }
   return labels;
 }
+const config = {
+  apiKey: "AIzaSyBzaPMUpvO70DsD69Pt_xM8y9gpx37MDNs",
+  authDomain: "healthify-f5133.firebaseapp.com",
+  databaseURL: "https://healthify-f5133.firebaseio.com",
+  projectId: "healthify-f5133",
+  storageBucket: "healthify-f5133.appspot.com",
+  messagingSenderId: "306585452720",
+};
+firebase.initializeApp(config);
+pushData = (data) => {
+  const fb = firebase.database().ref();
+  fb.child('store/').push(data);
+}
 let myLineChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -49,6 +62,8 @@ fetchdata = async () =>{
             myLineChart.data.datasets[0].data = data.stepLength;
             myLineChart.data.datasets[1].data = data.strideLength;
             myLineChart.update();
+            // console.log(data);
+            pushData(data);
           });
         }
       )
